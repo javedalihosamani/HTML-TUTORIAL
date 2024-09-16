@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>MARQUEE</title>
+    </head>
+    <body>
+        <center>
+            <h1>MARQUEE TAG SCROLLAMOUNT ATTRIBUTE</h1>
+        </center>
+        <hr>
+
+        <marquee bgcolor="skyblue" scrollamount="1">THIS IS A MARQUEE TAG..!</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="20" id="test">THIS IS A MARQUEE TAG..!</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="10">THIS IS A MARQUEE TAG..!</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="5">THIS IS A MARQUEE TAG..!</marquee>
+
+        <br><hr><br>
+
+        <h2>MARQUEE TAG JAVASCRIPT CODE</h2>
+
+        <script>
+            document.getElementById("test").onmouseover = function(){
+                document.getElementById("test").stop();
+            }
+            document.getElementById("test").onmouseleave = function(){
+                document.getElementById("test").start();
+            }
+        </script>
+    </body>
+</html>
