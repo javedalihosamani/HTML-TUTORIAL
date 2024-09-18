@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+    <body>
+        <center>
+            <h1>FIELDSET AND LEGEND TAG</h1>
+        </center>
+        <hr>
+
+        <form autocomplete="off" onsubmit="FormValue()" onreset="alert('Reset the value')" name="formName">
+            <fieldset>
+                <legend>First Name</legend>
+                <label for="firstName">First Name</label>
+                <input type="text" placeholder="First Name" name="firstName" id="firstName" required minlength="5" maxlength="20" value="HTML" readonly>
+            </fieldset>
+            <fieldset>
+                <legend>Middle Name</legend>
+                <label for="middleName">Middle Name</label>
+                <input type="text" placeholder="Middle Name" name="middleName" id="middleName" required>
+            </fieldset>
+            <fieldset>
+                <legend>Last Name</legend>
+                <label for="lastName">Last Name</label>
+            <input type="text" placeholder="Last Name" name="lastName" id="lastName" required>
+            </fieldset>
+            <fieldset>
+                <legend>Buttons</legend>
+                <button type="button" onclick="alert('Button Clicked')">BUTTON</button>
+                <button type="submit">SUBMIT</button>
+                <button type="reset">RESET</button>
+            </fieldset>
+        </form>
+
+        <script>
+            function FormValue(){
+                let firstName = document.formName.firstName.value; // Select an element using name attribute
+
+                let middleName = document.getElementById('middleName').value; // Select an element using id attribute
+
+                let lastName = document.getElementById('lastName').value;
+                alert('First Text Box Value is : ' + firstName);
+                alert('Middle Text Box Value is : ' + middleName);
+                alert('Last Text Box Value is : ' + lastName);
+            }
+        </script>
+    </body>
+</html>
